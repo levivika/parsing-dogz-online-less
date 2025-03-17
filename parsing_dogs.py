@@ -35,11 +35,7 @@ def get_dogs(html):
             groups.append(group)
             local_name = tds[2].text.strip()
             local_names.append(local_name)
-            
-            img_src=th.find('span').find('img').get('src')
-            image = get_image(img_src)
-            name_img = f"{name}.jpg"
-            download_image(image, name_img)
+
             
             img_src = th.find('span').find('img').get('src')
             if img_src:

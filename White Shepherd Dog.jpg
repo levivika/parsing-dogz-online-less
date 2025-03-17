@@ -36,6 +36,6 @@ details[open] { background: #970302; color: #dfdedd; }
 <p>Our servers are currently under maintenance or experiencing a technical issue</p>
 </div>
 </div>
-<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp3078 cp3078, Varnish XID 239571931<br>Upstream caches: cp3078 int<br>Error: 403, Forbidden. Please comply with the User-Agent policy: https://meta.wikimedia.org/wiki/User-Agent_policy at Wed, 12 Mar 2025 19:17:53 GMT<br><details><summary>Sensitive client information</summary>IP address: 5.18.161.40</details></code></p>
+<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp3078 cp3078, Varnish XID 246319383<br>Upstream caches: cp3078 int<br>Error: 403, Forbidden. Please comply with the User-Agent policy: https://meta.wikimedia.org/wiki/User-Agent_policy at Wed, 12 Mar 2025 19:19:18 GMT<br><details><summary>Sensitive client information</summary>IP address: 5.18.161.40</details></code></p>
 </div>
 </html>
