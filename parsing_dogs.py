@@ -37,7 +37,7 @@ def get_dogs(html):
             local_names.append(local_name)
 
             
-            img_src = th.find('span').find('img').get('src')
+            img_src = th.find('span').find_all('img')[0].get('src')
             if img_src:
                 response=requests.get(img_src)
                 if response.status_code==200:
