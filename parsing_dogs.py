@@ -36,7 +36,7 @@ def get_dogs(html):
             local_name = tds[2].text.strip()
             local_names.append(local_name)
 
-            
+
             img_src = th.find('span').find_all('img')[0].get('src')
             if img_src:
                 response=requests.get(img_src)
@@ -47,10 +47,15 @@ def get_dogs(html):
                     print('j')
 
         except Exception as e:
-            print(f"Ошибка при обработке {name}: {e}")
-            names.append('none')
-            groups.append('none')
-            local_names.append('none')
+            try:
+                image_filename = os.path.join('dog_images', f"{name}.txt")
+                with open(image_filename, 'w') as file:
+                    file.write('jjcjcc')
+                names.append('none')
+                groups.append('none')
+                local_names.append('none')
+            except Exception as e:
+                print(f'error {name}: {e}')
     print(names)
     print(groups)
     print(local_names)
